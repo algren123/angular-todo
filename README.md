@@ -1,4 +1,4 @@
-# TodoAlgren
+# Angular Todo App
 
 Live: https://algren123.github.io/angular-todo/
 
