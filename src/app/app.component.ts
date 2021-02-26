@@ -19,7 +19,9 @@ export class AppComponent {
   ) {}
 
   ngOnInit() {
+
     this.getLocalTodos();
+    this.todoDataService.lastId = this.todoDataService.todos.length - 1;
   }
 
   addTodo() {
@@ -32,10 +34,8 @@ export class AppComponent {
       });
     } else {
       this.todoDataService.addTodo(this.newTodo);
-
       this.newTodo = new Todo();
     }
-
   }
 
   getLocalTodos() {
