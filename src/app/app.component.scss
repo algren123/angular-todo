@@ -1,0 +1,70 @@
+.header {
+    text-align: center;
+
+    h1 {
+        font-size: 5em;
+        cursor: default;
+        margin-top: 2rem;
+        color: rgba(0,0,0,0.25)
+    }
+
+    .new-todo {
+        font-size: 1em;
+        width: 25%;
+        text-align: center;
+        display: flex;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: black;
+
+
+    }
+    ::placeholder {
+        color: black;
+        opacity: 0.5;
+    }
+}
+
+.todo-list {
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
+    padding-left: 0;
+
+    li:first-child {
+        margin-top: 15px;
+    }
+
+    .view {
+        display: flex;
+        margin: auto;
+        text-align: center;
+        font-size: 1.25em;
+        padding: 12px 0;
+        width: 25%;
+        background-color: rgba(255, 255, 255, 0.25);
+
+        .toggle {
+            margin: auto 10px;
+            height: 25px;
+            width: 25px;
+            justify-content: first baseline;
+            text-align: left;
+            display: flex;
+        }
+
+        .destroy {
+            margin-left: auto;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+    }
+
+    .completed {
+        text-decoration: line-through;
+    }
+}
+
+.footer {
+    text-align: center;
+}
