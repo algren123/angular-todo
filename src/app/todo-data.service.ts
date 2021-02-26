@@ -1,3 +1,4 @@
+import { CompileTemplateMetadata } from '@angular/compiler';
 import { Injectable } from '@angular/core';
 import { Todo } from './todo';
 
@@ -44,6 +45,7 @@ export class TodoDataService {
 
   toggleTodoComplete(todo: Todo){
     let updatedTodo = this.updateTodoById(todo.id, {complete: !todo.complete});
+    localStorage.setItem('Todos', JSON.stringify(this.todos))
     return updatedTodo;
   }
 }

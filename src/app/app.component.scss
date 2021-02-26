@@ -43,6 +43,7 @@
         padding: 12px 0;
         width: 25%;
         background-color: rgba(255, 255, 255, 0.25);
+        word-break: break-all;
 
         .toggle {
             margin: auto 10px;
@@ -57,6 +58,8 @@
             margin-left: auto;
             margin-right: 15px;
             cursor: pointer;
+            margin-top: auto;
+            margin-bottom: auto;
         }
     }
 
@@ -82,19 +85,19 @@
     padding: 12px 0;
     width: 25%;
     background-color: rgba(255, 255, 255, 0.25);
+    word-break: break-all;
 
     .toggle {
         margin: auto 10px;
         height: 25px;
         width: 25px;
-        justify-content: first baseline;
-        text-align: left;
-        display: flex;
     }
 
     .destroy {
         margin-left: auto;
         margin-right: 15px;
+        margin-top: auto;
+        margin-bottom: auto;
         cursor: pointer;
     }
   }
