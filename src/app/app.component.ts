@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { strictEqual } from 'assert';
 import Swal from 'sweetalert2';
 import { Todo } from './todo';
 import { TodoDataService } from './todo-data.service';
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
 
 @Component({
@@ -59,5 +59,7 @@ export class AppComponent {
     return this.todoDataService.getAllTodos();
   }
 
-
+  drop(event: CdkDragDrop<string[]>) {
+    moveItemInArray(this.todos, event.previousIndex, event.currentIndex);
+  }
 }
