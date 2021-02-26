@@ -6,7 +6,6 @@ import { Todo } from './todo';
 })
 export class TodoDataService {
   lastId: number = 0;
-
   todos: Todo[] = [];
 
   constructor() { }

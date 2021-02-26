@@ -19,9 +19,8 @@ export class AppComponent {
   ) {}
 
   ngOnInit() {
-
     this.getLocalTodos();
-    this.todoDataService.lastId = this.todoDataService.todos.length - 1;
+    this.todoDataService.lastId = localStorage.Todos.length - 2;
   }
 
   addTodo() {
